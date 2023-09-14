@@ -1,0 +1,78 @@
+React Hook write in function component
+use about "State"
+ex useState useEffect etc.
+-------------------------------------------
+ex 1
+import { useState } from "react";
+function App() {
+  //crate a state
+  const [count,setCount] = useState(0);
+  function addCount(){
+    
+    setCount(count+1) 
+    // when use useState function in const [count,setCount] = useState(0);
+    //will also know to usr which var to change them 
+    console.log(count);
+    //default value count = 0 
+    // when click  call addCount and then addCount call setCount 
+    // then count++
+  }
+  function subTractCount(){
+    setCount(count-1 )
+    console.log(count);
+  }
+  function clearCount(){
+    setCount(0)
+  }
+  return (
+    <>
+      <h1>{count}</h1>
+      <button onClick={()=>setCount(count+1)} >increase</button>
+      <button onClick={subTractCount} >decrease</button>
+      <button onClick={clearCount}>clear</button>
+    </>
+  );
+}
+
+export default App;
+// เป็นหน้าตา แอพของเรา
+-------------------------------------------
+
+
+การสร้าง component
+
+- class component 
+    สร้าง class ที่ extends มาจาก React.Component
+    และ Return HTML มา
+    ex class Header extends React.Component {
+        render(){
+            return <h1>Hi! react</h1>
+        }
+    }
+
+
+ นิยมกว่า แบบแรก ทำได้ง่ายกว่า
+- functional component
+    function Header(){
+        return <h1>Hi! react</h1>;
+    }
+    export default Header;
+    ----- เขียนอีกแบบได้
+   export default function Header(){
+        return <h1>Hi! react</h1>;
+    }
+    ----- แบบ arrow function
+    export default const Header =()=>{
+        return <h1>Hi! react</h1>;
+    }
+    
+
+
+
+
+External Component
+เป็นการสร้าง Component เป็นไฟล์ด้านนอกที่มี .js และนำเข้ามาทำงานในเว็ป
+components/Header.js
+    export default function Header(){
+        return <h1>HI</h1>
+    }

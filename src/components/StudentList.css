@@ -1,0 +1,35 @@
+ul{
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+h1{
+    font-size: 28px;
+    text-align: center;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 20px 5px;
+    padding: 25px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.delete{
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+}

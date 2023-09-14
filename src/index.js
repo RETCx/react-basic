@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// create viusual DOM -> render JSX to screen 
+// viusual DOM -> copy real DOM ,change only part that edited
+// make web more faster
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>
 );
-
+//<App /> มาจาก app.js
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

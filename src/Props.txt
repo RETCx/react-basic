@@ -1,0 +1,12 @@
+เป็นการส่งข้อมูลจาก parent to child
+
+       (props)
+parent   ->   child
+
+กำหนดข้อมูลที่แสดงใน child component
+กำหนดความสามรถบางอย่างให้กับ child component
+
+มี 2 แบบ
+<componentName props = >
+
+<componentName props1 =    props2=  >
